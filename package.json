@@ -1,0 +1,38 @@
+{
+  "name": "sensitive-words-azsprintmbk",
+  "version": "1.0.0",
+  "description": "Filter out a list of sensitvie words.",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "babel": {
+    "presets": ["latest"]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://azsprintmbk@github.com/azsprintmbk/sensitive-words.git"
+  },
+  "keywords": [
+    "filter",
+    "filtering",
+    "sensitive",
+    "words"
+  ],
+  "author": "Andrzej Zaleski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azsprintmbk/sensitive-words/issues"
+  },
+  "homepage": "https://github.com/azsprintmbk/sensitive-words#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-latest": "^6.16.0",
+    "jest": "^18.0.0",
+    "watch": "^1.0.1"
+  }
+}
